@@ -5,7 +5,8 @@ public class Main {
         //example();
         //task1();
         //task2();
-        task3();
+        //task3();
+        task4();
     }
     public static void example(){
         int[] weights = new int[12];
@@ -81,5 +82,20 @@ public class Main {
             System.out.print(arr3[i]);
         }
         System.out.println();
+    }
+    public static void task4(){
+        int[] arr1 = {1, 2, 3};
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] % 2 == 0){
+                arr1[i] += 1;
+                System.out.print(arr1[i]);
+            } else {
+                System.out.print(arr1[i]);
+            }
+            if (arr1.length - 1 == i){
+            } else {
+                System.out.print(", ");
+            }
+        }
     }
 }
